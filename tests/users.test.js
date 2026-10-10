@@ -27,5 +27,6 @@ test("GET /users/:id returns 404 for a user that does not exist", async () => {
 
 test("POST /users with no body returns 400", async () => {
   const res = await request(app).post("/users").send({});
+
   assert.strictEqual(res.status, 400);
 });
