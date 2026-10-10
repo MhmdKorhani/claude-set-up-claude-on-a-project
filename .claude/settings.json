@@ -6,7 +6,9 @@
         ],
         "deny": [
             "Read(./.env)",
-            "Read(./.env.*)"
+            "Read(./.env.*)",
+            "Bash(git push origin main *)",
+            "Bash(git push origin production *)"
         ],
         "defaultMode": "default"
     }
