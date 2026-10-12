@@ -14,7 +14,8 @@ Claude is denied pushing to main and production branches. - Not doing so, Claude
 The deny rules prevent Claude from reading `.env` files, which could contain production API keys or database passwords that should never be shared, because `.env` files typically contain sensitive data like API keys, database credentials, and tokens. Without the deny rules, Claude Code could read and potentially expose these secrets.
 
 ### Memory and Permissions
-When running /memory I was able to access CLAUDE.md content
+When running /memory I was able to access CLAUDE.md content. CLAUDE.md was loaded and showed the project description.
+/memory showed Project Instructions, User instructions, Project Instructions showed my CLAUDE.md content.
+
 When runnning /permissions I was able to see the rules I have added in .claude/settings.json
-/memory showed Project Instructions, User instructions, Project Instructions showed my CLAUDE.md content
-/permissions showed me Bash(npm run lint) and Bash(npm run test:*) which are two permissions added in settings.json
+/permissions showed me Bash(npm run lint) allowed and Bash(npm run test:*) allowed which are two permissions added in settings.json
